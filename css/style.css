@@ -58,11 +58,19 @@ body {
     cursor: pointer;
 }
 
+.menu-items .menu-item a {
+    text-decoration: none;
+}
+
+.menu-items .menu-item a:active {
+    opacity: .5;
+}
+
 .menu-items .menu-item:first-child {
     margin-left: 0;
 }
 
-.profile-img{
+.profile-img {
     height: 24px;
     width: 24px;
     object-fit: cover;
@@ -91,6 +99,7 @@ body {
 .contents {
     max-width: 821px;
     margin-top: 16px;
+    padding: 0 26px;
 }
 
 .card {
@@ -104,11 +113,17 @@ body {
 
 .story-items {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 0 8px;
     display: flex;
-    margin: 0 8px;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.story-items::-webkit-scrollbar {
+    display: none;
 }
 
 .story-items .item {
@@ -119,10 +134,17 @@ body {
 .story-items .item .user-img {
     height: 66px;
     width: 66px;
-    border-radius: 50%;
-    border: 2px solid purple;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #f99b4a, #c72e8f) border-box;
+    border: 2px solid transparent;
+    border-radius: 50px;
     padding: 2px;
     cursor: pointer;
+}
+
+.story-items .item .user-img img {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
 }
 
 .story-items .item .user-name {
@@ -133,12 +155,6 @@ body {
     white-space: nowrap;
     overflow: hidden;
     font-size: 12px;
-}
-
-.story-items .item img {
-    height: 58px;
-    width: 58px;
-    border-radius: 50%;
 }
 
 @media screen and (max-width: 700px) {
