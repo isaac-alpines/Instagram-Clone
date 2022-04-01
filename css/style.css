@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.header-navbar {
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.header-navbar .container {
+    max-width: 975px;
+}
+
+.search {
+    height: 36px;
+    width: 268px;
+    background: #efefef;
+    border-radius: 8px;
+    padding: 3px 16px;
+}
+
+.search input {
+    height: 31px;
+    width: 86%;
+    font-size: 16px;
+    color: #262626;
+    background: #efefef;
+    border: 0;
+    padding: 0;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.search svg {
+    margin-right: 12px;
+    margin-top: -5px;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu-items .menu-item {
+    height: 24px;
+    width: 24px;
+    display: inline;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.menu-items .menu-item:first-child {
+    margin-left: 0;
+}
+
+.profile-img{
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.message-counter {
+    display: inline;
+    position: absolute;
+    background-color: #ed4956;
+    color: white;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    font-size: 11px;
+    text-align: center;
+    margin-left: -15px;
+    margin-top: -3px;
+}
+
+.message-counter span {
+    padding: 0 3px;
+    line-height: 1.6;
+}
+
+.contents {
+    max-width: 821px;
+    margin-top: 16px;
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #dbdbdb;
+}
+
+.stories .card {
+    padding: 16px 0;
+}
+
+.story-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    margin: 0 8px;
+}
+
+.story-items .item {
+    display: table;
+    margin: 0 8px;
+}
+
+.story-items .item .user-img {
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    border: 2px solid purple;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.story-items .item .user-name {
+    margin-top: 3px;
+    letter-spacing: .01em;
+    max-width: 74px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.story-items .item img {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .search {
+        display: none;
+    }
+}
