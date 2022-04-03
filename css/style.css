@@ -8,6 +8,10 @@ body {
     background-color: #fafafa;
 }
 
+header {
+    height: 60px;
+}
+
 .header-navbar {
     height: 60px;
     background-color: #fff;
@@ -62,7 +66,7 @@ body {
     text-decoration: none;
 }
 
-.menu-items .menu-item a:active {
+.menu-items .menu-item:active, .logo a:active {
     opacity: .5;
 }
 
@@ -122,10 +126,6 @@ body {
     scrollbar-width: none;  /* Firefox */
 }
 
-.story-items::-webkit-scrollbar {
-    display: none;
-}
-
 .story-items .item {
     display: table;
     margin: 0 8px;
@@ -157,8 +157,183 @@ body {
     font-size: 12px;
 }
 
+.posts .card header {
+    padding: 0;
+    margin: 12px 0;
+    display: flex;
+}
+
+.posts .card .user-img img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.posts .card .user-name {
+    font-weight: 600;
+    margin-left: 12px;
+    justify-content: center;
+    font-size: 14px;
+    align-self: center;
+    line-height: 0;
+}
+
+.posts .card .action {
+    justify-content: center;
+    align-self: center;
+    line-height: 0;
+    width: 100%;
+}
+
+.posts .card .action svg {
+    float: right;
+    cursor: pointer;
+}
+
+.posts .card .user-name a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.posts .card main .post-img {
+    margin: 0;
+    padding: 0;
+}
+
+.posts .card main .post-img img {
+    width: 100%;
+}
+
+.posts .card main .post-action {
+    padding: 12px 0;
+}
+
+.posts .card main .post-action a {
+    text-decoration: none;
+    width: 48px;
+}
+
+.posts .card main .post-action a svg {
+    color: #262626;
+    fill: #262626;
+}
+
+.posts .card main .post-action a:hover {
+    opacity: .5;
+}
+
+.posts .card main .post-like a, .posts .card main .post-memo a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #262626;
+    font-size: 14px;
+}
+
+.posts .card main .post-like {
+    margin-bottom: 8px;
+}
+
+.posts .card main .post-memo {
+    color: #262626;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.posts .card main .post-memo p {
+    margin: 0;
+}
+
+.memo-more {
+    color: #8e8e8e !important;
+}
+
+.posts .card main .post-view-all {
+    margin-bottom: 10px;
+}
+
+.posts .card main .post-view-all a {
+    font-size: 14px;
+    color: #8e8e8e;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.posts .card main .post-time {
+    font-size: 12px;
+    color: #8e8e8e;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: .2px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.posts .card footer {
+    display: flex;
+    border-top: 1px solid #efefef;
+    margin: 0 -12px;
+    padding: 12px;
+}
+
+.posts .card footer .comment-box {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 400;
+}
+
+.posts .card footer .comment-box::placeholder {
+    color: #8e8e8e;
+}
+
+.posts .card footer .send-comment {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar .sidebar-profile img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.sidebar .sidebar-profile .switch-account {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 12px;
+    align-self: center;
+    margin-top: -4px;
+}
+
+.sidebar .sidebar-profile .profile-link {
+    color: #262626;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.sidebar .sidebar-profile span {
+    color: #8e8e8e;;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    align-self: center;
+    line-height: 1.3;
+}
+
 @media screen and (max-width: 700px) {
     .search {
+        display: none;
+    }
+
+    .story-items::-webkit-scrollbar {
         display: none;
     }
 }
