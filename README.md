@@ -1,5 +1,5 @@
 # Orginal Instagram Clone With Bootstrap 5, HTML, CSS
-Hi, In this my project, I cloned Instagram in the original way using Bootstrap, HTML and CSS.
+Hi, In this my project, I cloned Instagram in the original way using Bootstrap, HTML and CSS. (Responsive)
 
 ## Live Demo
 [VIEW DEMO](https://isaac-alpines.github.io/Instagram-Clone)
